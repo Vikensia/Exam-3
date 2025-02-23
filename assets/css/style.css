@@ -45,6 +45,7 @@
   --green-color: #64CCC5;
   --orange-color: #ffd930;
   --grey-color: #f4f4f4;
+  --dark-orange: #ff9e30;
 }
 
 *, *::after, *::before {
@@ -83,9 +84,9 @@ button {
   display: inline-block;
   color: var(--text-color);
   font-family: "DM Sans", sans-serif;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   letter-spacing: 0.03375rem;
-  padding: 11px 15px;
+  padding: 9px 15px;
   border-radius: 23px;
   background-color: var(--white-color);
   cursor: pointer;
@@ -93,7 +94,7 @@ button {
   z-index: 1;
   position: relative;
   transition: all 0.3s;
-  border: none;
+  border: 2px solid var(--white-color);
 }
 button::after {
   content: "";
@@ -120,6 +121,9 @@ button::before {
 }
 button:hover::before {
   width: 100%;
+}
+button:active::before {
+  background-color: var(--dark-orange);
 }
 
 /*Header*/
@@ -165,6 +169,9 @@ header .logo img {
 .buttons-block {
   margin-right: 6px;
   margin-top: 5px;
+}
+.buttons-block button {
+  font-size: 1.125rem;
 }
 
 .hamburger {
@@ -273,13 +280,13 @@ h1 {
   font-family: "Roboto Serif", serif;
   font-size: 4rem;
   font-weight: 600;
-  padding-bottom: 24px;
+  padding-bottom: 22px;
   letter-spacing: -0.1rem;
 }
 h1 + p {
   width: 550px;
   letter-spacing: 0.03375rem;
-  padding-bottom: 28px;
+  padding-bottom: 27px;
 }
 
 .start-trial-btn {
@@ -590,6 +597,64 @@ hgroup h2 + p {
 }
 
 /*Recent*/
+.recent h2 {
+  color: var(--black-color);
+  font-family: "Roboto Serif", serif;
+  font-size: 4rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: -0.015rem;
+  margin-bottom: 85px;
+}
+
+.projects {
+  display: flex;
+  margin-bottom: 103px;
+  align-content: start;
+  gap: 73px;
+}
+.projects button {
+  margin-top: 70px;
+  margin-bottom: 51px;
+  margin-left: auto;
+  align-self: flex-start;
+  background: var(--black-color);
+  color: var(--white-color);
+  border: 2px solid black;
+}
+.projects button::after {
+  background-color: var(--black-color);
+}
+.projects button:hover {
+  color: var(--black-color);
+}
+.projects .btn-arrow {
+  background-color: var(--white-color);
+}
+.projects .btn-arrow::before {
+  border-top: 1px solid var(--black-color);
+  border-left: 1px solid var(--black-color);
+}
+
+.side {
+  width: calc(50% - 35px);
+}
+
+.project {
+  margin-bottom: 88px;
+}
+.project .image-box {
+  margin-bottom: 16px;
+}
+.project h3 {
+  color: var(--black-color);
+  font-family: "Roboto Serif", serif;
+  font-size: 1.875rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  letter-spacing: -0.07rem;
+}
+
 .page-shadow {
   position: fixed;
   left: 0;

@@ -7,9 +7,8 @@
 	--green-color: #64CCC5;
 	--orange-color: #ffd930;
 	--grey-color: #f4f4f4;
-
+	--dark-orange: #ff9e30;
 }
-
 
 *, *::after, *::before {
     box-sizing: border-box;
@@ -47,9 +46,9 @@ button {
 	display: inline-block;
 	color: var(--text-color);
 	font-family: "DM Sans", sans-serif;
-	font-size: 1.125rem;
+	font-size: 1.25rem;
 	letter-spacing: 0.03375rem;
-	padding: 11px 15px;
+	padding: 9px 15px;
 	border-radius: 23px;
 	background-color: var(--white-color);
 	cursor: pointer;
@@ -57,7 +56,7 @@ button {
 	z-index: 1;
 	position: relative;
 	transition: all .3s;
-	border: none;
+	border: 2px solid var(--white-color);
 	&::after {
 		content: '';
 		position: absolute;
@@ -84,8 +83,10 @@ button {
   	&:hover::before {
       width: 100%;
     }
+	&:active::before {
+		background-color: var(--dark-orange);
+	}
 }
-
 
 /*Header*/
 
@@ -131,6 +132,9 @@ header {
 .buttons-block {
 	margin-right: 6px;
 	margin-top: 5px;
+	button {
+		font-size: 1.125rem;
+	}
 }
 
 .hamburger {
@@ -250,12 +254,12 @@ h1 {
 	font-family: "Roboto Serif", serif;
 	font-size: 4rem;
 	font-weight: 600;
-	padding-bottom: 24px;
+	padding-bottom: 22px;
 	letter-spacing: -0.1rem;
 	+ p {
 		width: 550px;
 		letter-spacing: 0.03375rem;
-		padding-bottom: 28px;
+		padding-bottom: 27px;
 	}
 }
 
@@ -572,10 +576,61 @@ hgroup {
 
 /*Recent*/
 
+.recent h2 {
+	color: var(--black-color);
+	font-family: "Roboto Serif", serif;
+	font-size: 4rem;
+	font-weight: 600;
+	text-align: center;
+	letter-spacing: -0.015rem;
+	margin-bottom: 85px;
+}
 
-
-
-
+.projects {
+	display: flex;
+	margin-bottom: 103px;
+	align-content: start;
+	gap: 73px;
+	button {
+		margin-top: 70px;
+		margin-bottom: 51px;
+		margin-left: auto;
+		align-self: flex-start;
+		background: var(--black-color);
+		color: var(--white-color);
+		border: 2px solid black;
+		&::after {
+			background-color: var(--black-color);
+		}
+		&:hover {
+			color: var(--black-color);
+		}
+	}
+	.btn-arrow {
+	background-color: var(--white-color);
+		&::before {
+			border-top: 1px solid var(--black-color);
+			border-left: 1px solid var(--black-color);
+		}
+	}
+}
+.side {
+	width: calc(50% - 35px);
+}
+.project {
+	margin-bottom: 88px;
+	.image-box {
+		margin-bottom: 16px;
+	}
+	h3 {
+		color: var(--black-color);
+		font-family: "Roboto Serif", serif;
+		font-size: 1.875rem;
+		font-weight: 600;
+		margin-bottom: 10px;
+		letter-spacing: -0.07rem;
+	}
+}
 
 .page-shadow {
 	position: fixed;
