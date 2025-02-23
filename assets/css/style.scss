@@ -6,6 +6,7 @@
 	--black-color: #0C0C0C;
 	--green-color: #64CCC5;
 	--orange-color: #ffd930;
+	--grey-color: #f4f4f4;
 
 }
 
@@ -118,6 +119,8 @@ header {
 	display: none;
 }
 
+/*First*/
+
 .green {
 	color: var(--green-color);
 }
@@ -139,6 +142,7 @@ main {
 	background-repeat: no-repeat;
 	background-position: 95% 50%;
 	background-size: contain;
+	margin-bottom: 100px;
 	.container {
 		display: flex;
 		justify-content: space-between;
@@ -289,9 +293,78 @@ h1 {
 	}
 }
 
+/*Services*/
+hgroup {
+	width: 700px;
+	margin: 0 auto;
+	h2 {
+		font-family: "Roboto Serif", serif;
+		font-size: 1.875rem;
+		font-weight: 600;
+		margin-bottom: 24px;
+		text-align: center;
+		letter-spacing: -0.11rem;
+		+ p {
+			color: var(--black-color);
+			text-align: center;
+			font-family: "Roboto Serif", serif;
+			font-size: 4rem;
+			font-weight: 600;
+			margin-bottom: 80px;
+			letter-spacing: -0.1rem;
+		}
+	}
+}
 
+.services-list {
+	display: grid;
+	gap: 66px 80px;
+	grid-template-columns: repeat(auto-fit, minmax(413px, 1fr));
+	margin-bottom: 117px;
+}
 
+.services-list li {
+	border-radius: 20px;
+	background: var(--grey-color);
+	padding: 45px;
+	.svg-box {
+		background-color: var(--black-color);
+		border-radius: 50%;
+		width: 80px;
+		height: 80px;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 62px;
+	}
+	svg {
+		width: 30px;
+		height: 30px;
+	}
+	h3 {
+		color: var(--black-color);
+		font-family: "Roboto Serif", serif;
+		font-size: 1.5625rem;
+		font-weight: 500;
+		margin-bottom: 15px;
+	}
+	&:hover {
+		background-color: var(--black-color);
+		color: var(--grey-color);
+		transition: all .2s ease;
+		h3 {
+		color: var(--grey-color);
+		}
+		.svg-box {
+			background-color: var(--white-color);
+			svg {
+				filter: invert(1);
+			}
+		}
+	}
+}
 
+/*About*/
 
 
 .page-shadow {
