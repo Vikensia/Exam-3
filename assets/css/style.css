@@ -589,6 +589,7 @@ hgroup h2 + p {
   z-index: -1;
 }
 
+/*Recent*/
 .page-shadow {
   position: fixed;
   left: 0;
