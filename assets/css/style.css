@@ -344,7 +344,7 @@ hgroup h2 {
   font-weight: 600;
   margin-bottom: 24px;
   text-align: center;
-  letter-spacing: -0.11rem;
+  letter-spacing: -0.05rem;
 }
 hgroup h2 + p {
   color: var(--black-color);
@@ -414,6 +414,7 @@ hgroup h2 + p {
   display: flex;
   gap: 64px;
   padding-bottom: 100px;
+  margin-bottom: 107px;
 }
 .about-us .gallery {
   position: relative;
@@ -525,6 +526,67 @@ hgroup h2 + p {
 
 .photo-1 {
   left: 112px;
+}
+
+/*Process*/
+.process hgroup {
+  margin-bottom: 98px;
+}
+
+.process-list {
+  display: grid;
+  gap: 92px;
+  grid-template-columns: repeat(auto-fit, minmax(273px, 1fr));
+  width: 98%;
+  margin: 0 auto;
+  margin-bottom: 105px;
+}
+
+.process-list li .svg-box {
+  background-color: var(--black-color);
+  border-radius: 50%;
+  width: 77px;
+  height: 77px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--white-color);
+}
+.process-list li h3 {
+  position: absolute;
+  color: var(--black-color);
+  font-family: "Roboto Serif", serif;
+  font-size: 1.9rem;
+  font-weight: 600;
+  letter-spacing: -0.01rem;
+  left: 102px;
+  top: 25px;
+}
+.process-list li p {
+  font-size: 1rem;
+  letter-spacing: 0.03rem;
+  padding: 0 31px 34px 40px;
+}
+
+.header-box {
+  margin-left: 70px;
+  margin-bottom: 36px;
+  position: relative;
+}
+.header-box::after {
+  content: url("../img/index/process-arrow.svg");
+  position: absolute;
+  left: -71px;
+  top: 36px;
+  z-index: -1;
+}
+
+.process-list li:last-of-type .header-box::after {
+  content: url("../img/index/process-arrow-last.svg");
+  position: absolute;
+  right: 0;
+  top: 36px;
+  z-index: -1;
 }
 
 .page-shadow {
