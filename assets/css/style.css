@@ -81,7 +81,7 @@ img {
   vertical-align: top;
 }
 
-button {
+.btn {
   display: inline-block;
   color: var(--text-color);
   font-family: "DM Sans", sans-serif;
@@ -97,7 +97,7 @@ button {
   transition: all 0.3s;
   border: 2px solid var(--white-color);
 }
-button::after {
+.btn::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -108,7 +108,7 @@ button::after {
   border-radius: 10rem;
   z-index: -2;
 }
-button::before {
+.btn::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -120,10 +120,10 @@ button::before {
   border-radius: 10rem;
   z-index: -1;
 }
-button:hover::before {
+.btn:hover::before {
   width: 100%;
 }
-button:active::before {
+.btn:active::before {
   background-color: var(--dark-orange);
 }
 
@@ -171,7 +171,7 @@ header .logo img {
   margin-right: 6px;
   margin-top: 5px;
 }
-.buttons-block button {
+.buttons-block .btn {
   font-size: 1.125rem;
 }
 
@@ -190,7 +190,7 @@ main {
 main::before {
   position: absolute;
   content: url("../img/index/ornament.svg");
-  top: calc(1% + 18px);
+  top: calc(1% + 50px);
 }
 
 .first {
@@ -610,11 +610,11 @@ hgroup h2 + p {
 
 .projects {
   display: flex;
-  margin-bottom: 103px;
   align-content: start;
   gap: 73px;
+  margin-bottom: 13px;
 }
-.projects button {
+.projects .btn {
   margin-top: 70px;
   margin-bottom: 51px;
   margin-left: auto;
@@ -623,10 +623,10 @@ hgroup h2 + p {
   color: var(--white-color);
   border: 2px solid black;
 }
-.projects button::after {
+.projects .btn::after {
   background-color: var(--black-color);
 }
-.projects button:hover {
+.projects .btn:hover {
   color: var(--black-color);
 }
 .projects .btn-arrow {
@@ -693,6 +693,82 @@ hgroup h2 + p {
 }
 .project a, .project a:visited {
   color: var(--black-color);
+}
+
+/*Review*/
+.review {
+  background: var(--grey-color);
+  padding: 45px;
+  text-align: center;
+  font-family: "Roboto Serif", serif;
+  color: var(--black-color);
+  border-radius: 20px;
+  margin-bottom: 111px;
+}
+.review .image-box {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 35px;
+  margin-inline: auto;
+}
+.review img {
+  border-radius: 150px;
+}
+.review blockquote {
+  font-size: 1.5625rem;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+.review .author {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.review .position {
+  color: var(--text-color);
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.03rem;
+  margin-bottom: 21px;
+}
+.review .buttons-block {
+  display: flex;
+  width: 110px;
+  justify-content: center;
+  margin-inline: auto;
+  gap: 11px;
+}
+.review .buttons-block .slider {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background: transparent;
+  position: relative;
+}
+.review .buttons-block .slider:hover {
+  transition: all 0.2s ease;
+  background: #000;
+}
+.review .buttons-block .slider:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  rotate: 134deg;
+  position: absolute;
+  left: 18px;
+  top: 17px;
+}
+.review .buttons-block .slider:hover::before {
+  transition: all 0.2s ease;
+  border-color: white;
+}
+.review .buttons-block .arrow-right.slider:before {
+  rotate: -45deg;
+  left: 16px;
 }
 
 /*---------------------*/

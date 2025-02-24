@@ -43,7 +43,7 @@ img {
 	vertical-align: top;
 }
 
-button {
+.btn {
 	display: inline-block;
 	color: var(--text-color);
 	font-family: "DM Sans", sans-serif;
@@ -133,7 +133,7 @@ header {
 .buttons-block {
 	margin-right: 6px;
 	margin-top: 5px;
-	button {
+	.btn {
 		font-size: 1.125rem;
 	}
 }
@@ -153,7 +153,7 @@ main {
 	&::before {
 		position: absolute;
 		content: url('../img/index/ornament.svg');
-		top: calc(1% + 18px);
+		top: calc(1% + 50px);
 	}
 }
 
@@ -589,10 +589,10 @@ hgroup {
 
 .projects {
 	display: flex;
-	margin-bottom: 103px;
 	align-content: start;
 	gap: 73px;
-	button {
+	margin-bottom: 13px;
+	.btn {
 		margin-top: 70px;
 		margin-bottom: 51px;
 		margin-left: auto;
@@ -672,6 +672,81 @@ hgroup {
 	}
 }
 
+ /*Review*/
+.review {
+	background: var(--grey-color);
+	padding: 45px;
+	text-align: center;
+	font-family: "Roboto Serif", serif;
+	color: var(--black-color);
+	border-radius: 20px;
+	margin-bottom: 111px;
+	.image-box {
+		width: 150px;
+		height: 150px;
+		margin-bottom: 35px;
+		margin-inline: auto;
+	}
+	img {
+		border-radius: 150px;
+	}
+	blockquote {
+		font-size: 1.5625rem;
+		font-weight: 700;
+		margin-bottom: 35px;
+	}
+	.author {
+		font-size: 1.25rem;
+		font-weight: 600;
+		margin-bottom: 5px;
+	}
+	.position {
+		color: var(--text-color);
+		font-family: "DM Sans", sans-serif;
+		font-size: 1rem;
+		letter-spacing: 0.03rem;
+		margin-bottom: 21px;
+	}
+	.buttons-block {
+		display: flex;
+		width: 110px;
+		justify-content: center;
+		margin-inline: auto;
+		gap: 11px;
+		.slider {
+			width: 45px;
+			height: 45px;
+			border-radius: 50%;
+			border: 1px solid black;
+			background: transparent;
+			position: relative;
+			&:hover {
+				transition: all .2s ease;
+				background: #000;
+			}
+			&:before {
+				content: '';
+				display: inline-block;
+				width: 10px;
+				height: 10px;
+				border-right: 2px solid black;
+				border-bottom: 2px solid black;
+				rotate: 134deg;
+				position: absolute;
+				left: 18px;
+				top: 17px;
+			}
+			&:hover::before {
+				transition: all .2s ease;
+				border-color: white;
+			}
+		}
+		.arrow-right.slider:before {
+			rotate: -45deg;
+			left: 16px;
+		}
+	}
+}
 
 
 
