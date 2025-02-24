@@ -166,6 +166,9 @@ header .logo img {
 .main-menu ul a:hover::after, .main-menu ul a:visited:hover::after, .main-menu ul :active:hover::after {
   width: calc(100% - 10px);
 }
+.main-menu ul li a.current {
+  color: var(--green-color);
+}
 
 .buttons-block {
   margin-right: 6px;
@@ -769,6 +772,125 @@ hgroup h2 + p {
 .review .buttons-block .arrow-right.slider:before {
   rotate: -45deg;
   left: 16px;
+}
+
+/*Footer*/
+footer {
+  background: var(--black-color);
+  color: #FFF;
+}
+footer .container {
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+footer .block {
+  display: flex;
+  justify-content: space-between;
+  gap: 105px;
+}
+footer .about {
+  width: 357px;
+}
+footer .about img {
+  width: 200px;
+  margin-bottom: 21px;
+}
+footer h4 {
+  font-family: "Roboto Serif", serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+footer .pages li {
+  margin-bottom: 16px;
+  font-size: 1rem;
+  letter-spacing: 0.03rem;
+}
+footer .pages li:last-child {
+  margin-bottom: 0;
+}
+footer a, footer a:visited {
+  color: var(--grey-color);
+}
+footer a:hover, footer a:active {
+  color: var(--green-color);
+}
+
+.subscribe-block {
+  width: 31%;
+}
+.subscribe-block h4 {
+  margin-bottom: 17px;
+}
+.subscribe-block form {
+  color: var(--text-color);
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.125rem;
+  letter-spacing: 0.03375rem;
+  position: relative;
+}
+.subscribe-block form button {
+  position: absolute;
+  padding: 8px 15px;
+  color: var(--white-color);
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.125rem;
+  letter-spacing: 0.03375rem;
+  right: 15px;
+  top: 12px;
+  border-radius: 20px;
+  background: var(--black-color);
+  border: 2px solid black;
+}
+.subscribe-block input {
+  width: 433px;
+  padding: 10px 9px 10px 23px;
+  border-radius: 40px;
+  background: #FFF;
+  height: 67px;
+}
+
+.block-top {
+  padding-bottom: 101px;
+  border-bottom: 1px solid var(--grey-color);
+  margin-bottom: 29px;
+}
+
+.block-bottom h4 {
+  margin-bottom: 16px;
+}
+.block-bottom address {
+  font-style: normal;
+}
+
+.socials-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 29px;
+}
+.socials-list a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+}
+.socials-list a:hover {
+  background-color: var(--black-color);
+  transition: all 0.2s ease;
+  border: 1px solid white;
+}
+.socials-list a:hover svg {
+  transition: all 0.2s ease;
+  filter: invert(1);
+}
+.socials-list svg {
+  width: 23px;
+  height: 23px;
 }
 
 /*---------------------*/
