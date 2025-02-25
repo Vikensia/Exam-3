@@ -424,7 +424,7 @@ hgroup h2 + p {
   padding-top: 163px;
   display: flex;
   gap: 64px;
-  padding-bottom: 100px;
+  padding-bottom: 174px;
   margin-bottom: 107px;
 }
 .about-us .gallery {
@@ -476,7 +476,9 @@ hgroup h2 + p {
 
 /*Gallery*/
 .photo-1 {
-  position: relative;
+  position: absolute;
+  transform: translate(112px, 0);
+  z-index: 9;
 }
 .photo-1 img {
   position: relative;
@@ -507,36 +509,34 @@ hgroup h2 + p {
 }
 
 .photo-2 {
-  left: 60px;
-  bottom: 31px;
+  transform: translate(60px, -31px);
   z-index: 8;
 }
 .photo-2::before {
   left: 0;
   bottom: 0;
-  z-index: 7;
+  z-index: 8;
 }
 .photo-2 img {
   opacity: 0.5;
-  z-index: 8;
+  z-index: 7;
 }
 
 .photo-3 {
-  left: 7px;
-  bottom: 63px;
+  transform: translate(8px, -63px);
 }
 .photo-3::before {
   left: 0;
   bottom: 0;
-  z-index: 5;
+  z-index: 6;
 }
 .photo-3 img {
   opacity: 0.2;
-  z-index: 6;
+  z-index: 5;
 }
 
-.photo-1 {
-  left: 112px;
+.photo {
+  transition: transform 1s ease-in-out, z-index 0.5s;
 }
 
 /*Process*/
