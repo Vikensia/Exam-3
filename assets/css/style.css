@@ -699,14 +699,22 @@ hgroup h2 + p {
 }
 
 /*Review*/
-.review {
+.review-block {
   background: var(--grey-color);
+  border-radius: 20px;
+  margin-bottom: 111px;
+}
+
+.reviews-list {
+  height: auto;
+}
+
+.review {
   padding: 45px;
+  padding-bottom: 0;
   text-align: center;
   font-family: "Roboto Serif", serif;
   color: var(--black-color);
-  border-radius: 20px;
-  margin-bottom: 111px;
 }
 .review .image-box {
   width: 150px;
@@ -734,14 +742,16 @@ hgroup h2 + p {
   letter-spacing: 0.03rem;
   margin-bottom: 21px;
 }
-.review .buttons-block {
+
+.review-buttons-block {
   display: flex;
   width: 110px;
   justify-content: center;
   margin-inline: auto;
   gap: 11px;
+  padding-bottom: 45px;
 }
-.review .buttons-block .slider {
+.review-buttons-block .slider {
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -750,11 +760,11 @@ hgroup h2 + p {
   position: relative;
   cursor: pointer;
 }
-.review .buttons-block .slider:hover {
+.review-buttons-block .slider:hover {
   transition: all 0.2s ease;
   background: #000;
 }
-.review .buttons-block .slider:before {
+.review-buttons-block .slider:before {
   content: "";
   display: inline-block;
   width: 10px;
@@ -766,11 +776,11 @@ hgroup h2 + p {
   left: 18px;
   top: 17px;
 }
-.review .buttons-block .slider:hover::before {
+.review-buttons-block .slider:hover::before {
   transition: all 0.2s ease;
   border-color: white;
 }
-.review .buttons-block .arrow-right.slider:before {
+.review-buttons-block .arrow-right.slider:before {
   rotate: -45deg;
   left: 16px;
 }

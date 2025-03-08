@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Canvix</title>
+    <link type="text/css" rel="stylesheet" href="assets/plugins/lightslider/css/lightslider.css" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
@@ -21,9 +22,9 @@
         <nav class="mobile-menu">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact us</a></li>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/portfolio.html">Portfolio</a></li>
+                <li><a href="pages/contact.html">Contact us</a></li>
             </ul>
         </nav>
     </div>
@@ -40,13 +41,13 @@
                 <nav class="main-menu">
                     <ul>
                         <li><a class="current" href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contact us</a></li>
+                        <li><a href="pages/about.html">About</a></li>
+                        <li><a href="pages/portfolio.html">Portfolio</a></li>
+                        <li><a href="pages/contact.html">Contact us</a></li>
                     </ul>
                 </nav>
                 <div class="buttons-block">
-                    <button type="button" class="btn contact-btn">Get in touch</button>
+                    <a href="pages/contact.html" class="btn contact-btn">Get in touch</a>
                     <button class="hamburger hamburger--squeeze btn" type="button" onclick="toggleMenu()">
                         <span class="hamburger-box">
                             <span class="hamburger-inner"></span>
@@ -299,22 +300,50 @@
                             </div>
                         </div>
                     </div>
-                    <div class="review">
-                        <div class="image-box">
-                            <img src="assets/img/index/miller.jpg" alt="CEO of an eduport Jacqueline Miller">
+                    <section class="review-block">
+                        <div class="reviews-list" id="lightSlider">
+                            <div class=" review">
+                                <div class="image-box">
+                                    <img src="assets/img/index/miller.jpg" alt="CEO of an eduport Jacqueline Miller">
+                                </div>
+                                <blockquote>
+                                    <p>
+                                        “Be genuine in your assessment, and provide constructive feedback to benefit both potential customers and the company providing the product or service.”
+                                    </p>
+                                </blockquote>
+                                <p class="author">Jacqueline Miller</p>
+                                <p class="position">CEO of an eduport</p>
+                            </div>
+                            <div class="review">
+                                <div class="image-box">
+                                    <img src="assets/img/index/oliver.jpg" alt="CEO at Webflow John Oliver">
+                                </div>
+                                <blockquote>
+                                    <p>
+                                        “When you reach out to a customer to ask if you can feature their testimonial, you’re showing your customer that you value them.”
+                                    </p>
+                                </blockquote>
+                                <p class="author">John Oliver</p>
+                                <p class="position">CEO at Webflow</p>
+                            </div>
+                            <div class="review">
+                                <div class="image-box">
+                                    <img src="assets/img/index/bates.jpg" alt="Product designer Skylar Bates">
+                                </div>
+                                <blockquote>
+                                    <p>
+                                        “Research is a critical component of the design process, helping designers understand the problem.”
+                                    </p>
+                                </blockquote>
+                                <p class="author">Skylar Bates</p>
+                                <p class="position">Product designer</p>
+                            </div>
                         </div>
-                        <blockquote>
-                            <p>
-                                “Be genuine in your assessment, and provide constructive feedback to benefit both potential customers and the company providing the product or service.”
-                            </p>
-                        </blockquote>
-                        <p class="author">Jacqueline Miller</p>
-                        <p class="position">CEO of an eduport</p>
-                        <div class="buttons-block">
+                        <div class="review-buttons-block">
                             <button type="button" class="slider arrow-left"></button>
                             <button type="button" class="slider arrow-right"></button>
                         </div>
-                    </div>
+                    </section>
                 </div>
             </section>
         </main>
@@ -396,6 +425,25 @@
         wow.init();
     </script> -->
     <script src="assets/js/gallery.js"></script>
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/plugins/lightslider/js/lightslider.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            let slider = $("#lightSlider").lightSlider({
+                slideMargin: 30,
+                controls: false,
+            });
+            $('.slider.arrow-left').on('click', function () {
+                slider.goToPrevSlide();
+            });
+            $('.slider.arrow-right').on('click', function () {
+                slider.goToNextSlide();
+            });
+        });
+    </script>
+
 </body>
 
 </html>

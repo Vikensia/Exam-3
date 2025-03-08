@@ -676,14 +676,22 @@ hgroup {
 }
 
  /*Review*/
-.review {
+.review-block {
 	background: var(--grey-color);
+	border-radius: 20px;
+	margin-bottom: 111px;
+}
+
+.reviews-list {
+	height: auto;
+}
+
+.review {
 	padding: 45px;
+	padding-bottom: 0;
 	text-align: center;
 	font-family: "Roboto Serif", serif;
 	color: var(--black-color);
-	border-radius: 20px;
-	margin-bottom: 111px;
 	.image-box {
 		width: 150px;
 		height: 150px;
@@ -710,45 +718,47 @@ hgroup {
 		letter-spacing: 0.03rem;
 		margin-bottom: 21px;
 	}
-	.buttons-block {
-		display: flex;
-		width: 110px;
-		justify-content: center;
-		margin-inline: auto;
-		gap: 11px;
-		.slider {
-			width: 45px;
-			height: 45px;
-			border-radius: 50%;
-			border: 1px solid black;
-			background: transparent;
-			position: relative;
-			cursor: pointer;
-			&:hover {
-				transition: all .2s ease;
-				background: #000;
-			}
-			&:before {
-				content: '';
-				display: inline-block;
-				width: 10px;
-				height: 10px;
-				border-right: 2px solid black;
-				border-bottom: 2px solid black;
-				rotate: 134deg;
-				position: absolute;
-				left: 18px;
-				top: 17px;
-			}
-			&:hover::before {
-				transition: all .2s ease;
-				border-color: white;
-			}
+}
+
+.review-buttons-block {
+	display: flex;
+	width: 110px;
+	justify-content: center;
+	margin-inline: auto;
+	gap: 11px;
+	padding-bottom: 45px;
+	.slider {
+		width: 45px;
+		height: 45px;
+		border-radius: 50%;
+		border: 1px solid black;
+		background: transparent;
+		position: relative;
+		cursor: pointer;
+		&:hover {
+			transition: all .2s ease;
+			background: #000;
 		}
-		.arrow-right.slider:before {
-			rotate: -45deg;
-			left: 16px;
+		&:before {
+			content: '';
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			border-right: 2px solid black;
+			border-bottom: 2px solid black;
+			rotate: 134deg;
+			position: absolute;
+			left: 18px;
+			top: 17px;
 		}
+		&:hover::before {
+			transition: all .2s ease;
+			border-color: white;
+		}
+	}
+	.arrow-right.slider:before {
+		rotate: -45deg;
+		left: 16px;
 	}
 }
 
