@@ -1,0 +1,76 @@
+@import "fonts.scss";
+@import "hamburgers.scss";
+@import "footer.scss";
+@import "defaults.scss";
+@import "gallery.scss";
+
+/*First*/
+
+.first {
+    margin-top: 60px;
+    color: var(--white-color);
+    .container {
+        border-radius: 20px;
+        background: var(--black-color);
+        padding: 92px 72px;
+        display: flex;
+    }
+    .text-content {
+        width: 45%;
+        margin-bottom: 60px;
+    }
+}
+
+h1 {
+    font-family: "Roboto Serif", serif;
+    font-size: 4rem;
+    margin-top: 5px;
+    letter-spacing: -0.2rem;
+    margin-bottom: 25px;
+}
+
+.rate {
+    margin-top: 40px;
+    display: flex;
+    font-family: "Roboto Serif", serif;
+    font-size: 1.25rem;
+    letter-spacing: -0.02rem;
+    .image-box {
+        width: 70px;
+        height: 70px;
+        margin-right: 12px;
+        + div {
+            margin-top: 10px;
+        }
+    }
+    .stars {
+        margin-top: 3px;
+    }
+    svg {
+        width: 20px;
+        height: 20px;
+        margin-right: 2px;
+    }
+}
+
+/*Gallery*/
+
+.gallery .image-box {
+    width: 567px;
+    aspect-ratio: 0;
+    height: 614px;
+} 
+
+.photo-1 {
+	transform: translate(196px, 66px);
+}
+
+.photo-2 {
+	transform: translate(123px, 35px);
+}
+
+.photo-3 {
+	transform: translate(42px, 0px);
+}
+
+/**/
