@@ -982,3 +982,50 @@ h1 {
 .partners-image-box img {
   border-radius: 20px;
 }
+
+/*our team*/
+.our-team .container {
+  padding-top: 100px;
+}
+.our-team h2 {
+  text-align: center;
+  font-family: "Roboto Serif", serif;
+  font-size: 4rem;
+  margin-bottom: 80px;
+}
+
+.team-members {
+  display: flex;
+  gap: 74px;
+  margin-bottom: 100px;
+}
+
+.member {
+  position: relative;
+}
+.member .image-box {
+  margin-bottom: 16px;
+}
+.member .image-box img {
+  border-radius: 20px;
+}
+.member .image-box + div {
+  font-family: "Roboto Serif", serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+.member .image-box + div + div {
+  font-size: 1rem;
+  letter-spacing: 0.03rem;
+}
+.member .socials-list {
+  position: absolute;
+  right: 15px;
+  top: 19px;
+  gap: 17px;
+}
+.member .socials-list a {
+  width: 35px;
+  height: 35px;
+}
