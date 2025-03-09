@@ -1354,7 +1354,6 @@ hgroup {
 .review-block {
 	margin-bottom: 60px;
 }
-
 }
 
 @media screen and (max-width: 864px) {
@@ -1388,8 +1387,8 @@ hgroup {
 		justify-content: flex-start;
 	}
 	.partners-list li:last-child {
-	scale: .7;
-	transform: translate(-31px);
+		scale: .7;
+		transform: translate(-31px);
 	}
 
 	.first {
@@ -1398,7 +1397,7 @@ hgroup {
     }
 	
 	.services-list li .svg-box {
-	scale: .7;
+		scale: .7;
     }
 
 	.about-us .container {
@@ -1407,15 +1406,14 @@ hgroup {
     }
 
 	.project h3 {
-    font-size: 1.5rem;
+		font-size: 1.5rem;
 	}
 	.process-list li .svg-box {
-	scale: .7;
-
-	.projects .btn {
-    margin-top: 40px;
+		scale: .7;
+		.projects .btn {
+		margin-top: 40px;
+		}
 	}
-}
 }
 
 .page-shadow {
@@ -1461,7 +1459,6 @@ hgroup {
 	ul {
 		padding-top: 20px;
 		li {
-
 			a {
 				display: inline-block;
 				padding: 10px 30px;
@@ -1480,26 +1477,23 @@ hgroup {
 		width: 100%;
 	}
 }
-
 	.process-list {
         grid-template-columns: 1fr;
 		margin-bottom: 60px;
-    }
-
-	.process-list .header-box {
-        margin-top: 18px;
-        margin-left: 28px;
-        margin-bottom: 6px;
+		.header-box {
+			margin-top: 18px;
+			margin-left: 28px;
+			margin-bottom: 6px;
+		}
     }
 
 	.review {
-	.image-box {
-        display: none;
-    }
-
-	blockquote {
-		width: 100%;
-	}
+		.image-box {
+			display: none;
+		}
+		blockquote {
+			width: 100%;
+		}
 	}
 
 	.projects {
@@ -1509,18 +1503,18 @@ hgroup {
 		.side {
 			width: 100%;
 		}
-
 		.btn {
-		margin-top: 0;
-		margin-bottom: 25px;
+			margin-top: 0;
+			margin-bottom: 25px;
 		}
 	}
+
 	hgroup h2 + p, .recent h2 {
         margin-bottom: 40px;
     }
 
 	.project {
-    margin-bottom: 40px;
+		margin-bottom: 40px;
 	}
 	.copyright a, .telephone a {
 		font-size: 1rem;
@@ -1554,37 +1548,34 @@ header .buttons-block .contact-btn {
 header .logo {
 	margin-left: 20px;
 }
-.services-list li h3 {
-    font-size: 1.3rem;
-}
 
 input[type="email"]::placeholder {
 	font-size: 1rem;
 }
-    .subscribe-block form button {
-        left: 60%;
-    }
 
-	.services-list li .svg-box {
-		margin-inline: 0;
-    width: 60px;
-    height: 60px;
-	}
+.subscribe-block form button {
+	left: 60%;
+}
 
 .services-list {
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+	li {
+		.svg-box {
+			margin-inline: 0;
+			width: 60px;
+			height: 60px;
+		}
+		h3 {
+			font-size: 1.1rem;
+		}
     }
-
+}
 .partners-list li {
         transform: translate(-33px);
     }
 hgroup h2 + p, .recent h2 {
         font-size: 1.5rem;
 		letter-spacing: 0;
-    }
-
-	    .services-list li h3 {
-        font-size: 1.1rem;
     }
 
 .about-us .text-content h2 + p {
@@ -1594,31 +1585,29 @@ hgroup h2 + p, .recent h2 {
 .statistics .green {
     font-size: 2rem;
 }
-    .process-list li h3 {
-        font-size: 1.3rem;
-    }
-	    .process-list li p {
-        font-size: 1.1rem;
-    }
 
-	.process-list li .svg-box {
-    width: 60px;
-    height: 60px;
-}
+    .process-list li {
+		h3 {
+			font-size: 1.3rem;
+			left: 71px;
+			top: 18px;
+		}
+	    p {
+			font-size: 1.1rem;
+    	}
+		.svg-box {
+			width: 60px;
+			height: 60px;
+		}
+	}
 
-.process-list li h3 {
-    left: 71px;
-    top: 18px;
-}
     footer .block-bottom > div {
         width: 80%;
     }
-
 }
 
-
 @media screen and (max-width: 375px) {
-	    .subscribe-block form button {
+	.subscribe-block form button {
         left: 50%;
     }
 }

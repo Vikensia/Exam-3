@@ -1546,7 +1546,6 @@ footer a:hover, footer a:active {
     grid-template-columns: 1fr;
     margin-bottom: 60px;
   }
-
   .process-list .header-box {
     margin-top: 18px;
     margin-left: 28px;
@@ -1612,10 +1611,6 @@ footer a:hover, footer a:active {
     margin-left: 20px;
   }
 
-  .services-list li h3 {
-    font-size: 1.3rem;
-  }
-
   input[type=email]::placeholder {
     font-size: 1rem;
   }
@@ -1624,14 +1619,16 @@ footer a:hover, footer a:active {
     left: 60%;
   }
 
+  .services-list {
+    grid-template-columns: 1fr;
+  }
   .services-list li .svg-box {
     margin-inline: 0;
     width: 60px;
     height: 60px;
   }
-
-  .services-list {
-    grid-template-columns: 1fr;
+  .services-list li h3 {
+    font-size: 1.1rem;
   }
 
   .partners-list li {
@@ -1641,10 +1638,6 @@ footer a:hover, footer a:active {
   hgroup h2 + p, .recent h2 {
     font-size: 1.5rem;
     letter-spacing: 0;
-  }
-
-  .services-list li h3 {
-    font-size: 1.1rem;
   }
 
   .about-us .text-content h2 + p {
@@ -1657,20 +1650,15 @@ footer a:hover, footer a:active {
 
   .process-list li h3 {
     font-size: 1.3rem;
+    left: 71px;
+    top: 18px;
   }
-
   .process-list li p {
     font-size: 1.1rem;
   }
-
   .process-list li .svg-box {
     width: 60px;
     height: 60px;
-  }
-
-  .process-list li h3 {
-    left: 71px;
-    top: 18px;
   }
 
   footer .block-bottom > div {
