@@ -1,0 +1,107 @@
+.gallery {
+  position: relative;
+  width: 55%;
+}
+.gallery .image-box {
+  width: 640px;
+  aspect-ratio: 1;
+  border-radius: 20px;
+}
+.gallery img {
+  border-radius: 20px;
+}
+
+/*Gallery*/
+.photo-1 {
+  position: absolute;
+  transform: translate(112px, 0);
+  z-index: 9;
+}
+.photo-1 img {
+  position: relative;
+  z-index: 9;
+}
+.photo-1::before {
+  position: absolute;
+  content: "";
+  background: rgba(18, 18, 18, 0.2);
+  width: 100%;
+  display: block;
+  height: 100%;
+  border-radius: 20px;
+  z-index: 10;
+}
+
+.photo-2, .photo-3 {
+  position: absolute;
+}
+.photo-2::before, .photo-3::before {
+  position: absolute;
+  content: "";
+  background: rgba(18, 18, 18, 0.2);
+  width: 100%;
+  display: block;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.photo-2 {
+  transform: translate(60px, -31px);
+  z-index: 8;
+}
+.photo-2::before {
+  left: 0;
+  bottom: 0;
+  z-index: 8;
+}
+.photo-2 img {
+  opacity: 0.5;
+  z-index: 7;
+}
+
+.photo-3 {
+  transform: translate(8px, -63px);
+}
+.photo-3::before {
+  left: 0;
+  bottom: 0;
+  z-index: 6;
+}
+.photo-3 img {
+  opacity: 0.2;
+  z-index: 5;
+}
+
+.photo {
+  transition: transform 1s ease-in-out, z-index 0.5s;
+}
+
+/*Media*/
+@media screen and (max-width: 1650px) {
+  .about-us .gallery .image-box {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 1328px) {
+  .about-us .gallery .image-box {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 1065px) {
+  .about-us .gallery .image-box {
+    width: 300px;
+  }
+
+  .photo-2 {
+    transform: translate(77px, 35px);
+  }
+
+  .photo-3 {
+    transform: translate(45px, 69px);
+  }
+}
+@media screen and (max-width: 986px) {
+  .about-us .gallery {
+    display: none;
+  }
+}
