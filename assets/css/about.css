@@ -789,6 +789,7 @@ header .logo img {
     display: none;
   }
 }
+/*First*/
 .first {
   margin-top: 60px;
   color: var(--white-color);
@@ -854,3 +855,5 @@ h1 {
 .photo-3 {
   transform: translate(42px, 0px);
 }
+
+/**/
