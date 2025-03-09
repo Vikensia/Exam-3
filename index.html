@@ -17,7 +17,7 @@
 
 <body>
     <!-- Mobile menu -->
-    <div class="page-shadow" onclick="toggleMenu()"></div>
+    <div class="page-shadow"></div>
     <div class="mobile-panel">
         <div class="logo">
             <a href="#">
@@ -53,7 +53,7 @@
                 </nav>
                 <div class="buttons-block">
                     <a href="pages/contact.html" class="btn contact-btn">Get in touch</a>
-                    <button class="hamburger hamburger--squeeze btn" type="button" onclick="toggleMenu()">
+                    <button class="hamburger hamburger--squeeze btn" type="button">
                         <span class="hamburger-box">
                             <span class="hamburger-inner"></span>
                         </span>
@@ -373,7 +373,7 @@
                     <div class="subscribe-block">
                         <h4>Subscribe</h4>
                         <form action="#" method="dialog">
-                            <input type="email" name="email" placeholder="Enter your email here" required>
+                            <input type="email" name="email" id="email" placeholder="Enter your email here" required>
                             <button type="submit">Subscribe</button>
                         </form>
                     </div>
@@ -420,20 +420,9 @@
             </div>
         </footer>
     </div>
-    <script>
-        function toggleMenu() {
-            document.querySelector(".hamburger").classList.toggle('is-active')
-            document.body.classList.toggle('open-mobile-menu');
-        }
-        // <!--
-        // let lazyLoadInstance = new LazyLoad({});
-        // const wow = new WOW({
-        //     animateClass: 'animate__animated'
-        // });
-        // wow.init();-->
-    </script>
     <script src="assets/js/gallery.js"></script>
-
+    <script src="assets/js/harmburger.js"></script>
+    <script src="assets/js/placeholder.js"></script>
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="assets/plugins/lightslider/js/lightslider.js"></script>
 
