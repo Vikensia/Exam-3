@@ -213,7 +213,7 @@ h1 {
         text-align: center;
         font-family: "Roboto Serif", serif;
         font-size: 4rem;
-        margin-bottom: 80px;
+        margin-bottom: 85px;
     }
 }
 
@@ -251,5 +251,27 @@ h1 {
     .socials-list a {
         width: 35px;
         height: 35px;
+    }
+}
+
+/*Contacts*/
+.contacts {
+    .container {
+        background-image: url('../img/about/last-bg.jpg');
+        padding-top: 45px;
+        padding-bottom: 33px;
+        margin-bottom: 100px;
+    }
+    p {
+        color: var(--white-color);
+        text-align: center;
+        font-family: "Roboto Serif", serif;
+        font-size: 2.8125rem;
+        font-weight: 700;
+        margin-bottom: 24px;
+    }
+    .button-block {
+        width: 160px;
+        margin-inline: auto;
     }
 }
