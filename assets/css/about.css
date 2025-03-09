@@ -793,6 +793,7 @@ header .logo img {
 .first {
   margin-top: 60px;
   color: var(--white-color);
+  margin-bottom: 167px;
 }
 .first .container {
   border-radius: 20px;
@@ -856,4 +857,128 @@ h1 {
   transform: translate(42px, 0px);
 }
 
-/**/
+/*Statistics*/
+.statistics-list {
+  padding: 45px;
+  display: flex;
+  gap: 105px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.statistics-list .stats {
+  font-family: "Roboto Serif", serif;
+  font-size: 2.8125rem;
+  font-weight: 700;
+  margin-bottom: 17px;
+}
+.statistics-list h3 {
+  font-family: "Roboto Serif", serif;
+  font-size: 1.5625rem;
+  font-weight: 500;
+  letter-spacing: -0.02rem;
+  margin-bottom: 20px;
+}
+
+/*Mission*/
+.mission {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+.mission .container {
+  padding-top: 100px;
+  display: flex;
+  padding-bottom: 130px;
+}
+.mission .text-content {
+  padding-top: 137px;
+  width: 45%;
+  margin-right: 30px;
+}
+.mission h2 {
+  font-family: "Roboto Serif", serif;
+  font-size: 1.5625rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.mission h2 + p {
+  font-family: "Roboto Serif", serif;
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+
+.missions-list {
+  margin-top: 48px;
+  display: grid;
+  column-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 20px;
+}
+.missions-list li {
+  position: relative;
+  margin-bottom: 10px;
+}
+.missions-list li::before {
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: var(--green-color);
+  left: -21px;
+  top: 2px;
+}
+.missions-list li::after {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 6px;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  rotate: -47deg;
+  left: -17px;
+  top: 6px;
+}
+
+.side-statistics {
+  margin-right: 86px;
+}
+.side-statistics .image-box img {
+  width: 327px;
+  border-radius: 20px;
+  margin-bottom: 32px;
+}
+.side-statistics .stats {
+  display: flex;
+  text-align: center;
+}
+.side-statistics .stats .left {
+  margin-left: 37px;
+  padding-right: 25px;
+  border-right: 1px solid white;
+  align-self: flex-start;
+  width: 190px;
+}
+.side-statistics .stats .right {
+  margin-top: 70px;
+  margin-left: 36px;
+  width: 110px;
+  margin-bottom: 61px;
+}
+.side-statistics .stats .number {
+  font-family: "Roboto Serif", serif;
+  font-size: 2.8125rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.side-statistics .stats .number + div {
+  font-size: 1rem;
+  letter-spacing: 0.03rem;
+}
+
+.partners-image-box {
+  align-self: flex-end;
+}
+.partners-image-box img {
+  border-radius: 20px;
+}
