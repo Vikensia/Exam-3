@@ -219,6 +219,21 @@ header {
 	}
 }
 
+.black-burger {
+	&::after {
+		background-color: var(--black-color);
+	}
+	.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+		background-color: #f4f4f4;
+	}
+	.hamburger-inner {
+		top: 50%;
+		left: -3px;
+	}
+
+	border: 2px solid black;
+}
+
 /*Media*/
 /*Mobile menu*/
 @media screen and (max-width: 836px) {

@@ -610,6 +610,20 @@ header .logo img {
   border-left: 1px solid var(--black-color);
 }
 
+.black-burger {
+  border: 2px solid black;
+}
+.black-burger::after {
+  background-color: var(--black-color);
+}
+.black-burger .hamburger-inner, .black-burger .hamburger-inner::before, .black-burger .hamburger-inner::after {
+  background-color: #f4f4f4;
+}
+.black-burger .hamburger-inner {
+  top: 50%;
+  left: -3px;
+}
+
 /*Media*/
 /*Mobile menu*/
 @media screen and (max-width: 836px) {
@@ -1048,4 +1062,259 @@ h1 {
 .contacts .button-block {
   width: 160px;
   margin-inline: auto;
+}
+
+/*Media*/
+@media screen and (max-width: 1606px) {
+  .missions-list li {
+    width: 260px;
+  }
+}
+@media screen and (max-width: 1482px) {
+  .gallery .image-box {
+    width: 400px;
+    height: 433px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .first {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 1320px) {
+  .partners-image-box {
+    display: none;
+  }
+
+  .side-statistics {
+    margin-right: 0;
+  }
+
+  .mission .text-content {
+    padding-top: 100px;
+    width: 70%;
+  }
+  .mission .container {
+    padding-bottom: 0;
+  }
+  .mission h2 + p {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 1256px) {
+  .photo-2 {
+    transform: translate(84px, 35px);
+  }
+
+  .photo-1 {
+    transform: translate(124px, 68px);
+  }
+}
+@media screen and (max-width: 1122px) {
+  .first, .statistics-list {
+    margin-bottom: 30px;
+  }
+
+  .first .container {
+    gap: 20px;
+    padding-bottom: 0;
+  }
+
+  .gallery .image-box {
+    width: 300px;
+    height: 333px;
+  }
+
+  .side-statistics .stats .left {
+    margin-left: 0;
+  }
+  .side-statistics .stats .right {
+    margin-top: 0;
+  }
+
+  .our-team .container {
+    padding-top: 50px;
+  }
+  .our-team h2 {
+    margin-bottom: 30px;
+    font-size: 3rem;
+  }
+
+  .missions-list li {
+    width: 220px;
+  }
+
+  .member .socials-list {
+    bottom: 88px;
+    top: auto;
+  }
+}
+@media screen and (max-width: 982px) {
+  .missions-list {
+    grid-template-columns: 1fr;
+  }
+  .missions-list li {
+    width: 100%;
+  }
+
+  .mission .text-content {
+    padding-top: 0;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0;
+  }
+
+  .statistics-list {
+    gap: 30px;
+  }
+
+  .mission h2 + p, .our-team h2 {
+    font-size: 2.5rem;
+  }
+
+  .contacts p {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 940px) {
+  .gallery {
+    display: none;
+  }
+
+  .first .text-content {
+    width: 100%;
+  }
+
+  .statistics-list {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 924px) {
+  .team-members {
+    gap: 30px;
+  }
+
+  .side-statistics {
+    display: none;
+  }
+
+  .mission .container {
+    width: min(90%, 600px);
+    padding: 50px 0;
+  }
+
+  .mission .text-content {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 835px) {
+  .member .socials-list {
+    top: 60%;
+  }
+
+  .team-members {
+    margin-bottom: 40px;
+  }
+
+  .contacts .container {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 772px) {
+  .member .socials-list {
+    top: 55%;
+    right: 15%;
+  }
+}
+@media screen and (max-width: 706px) {
+  .member .socials-list {
+    right: 13%;
+  }
+}
+@media screen and (max-width: 676px) {
+  .team-members {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .member {
+    width: 50%;
+  }
+
+  .member .socials-list {
+    top: 70%;
+    right: 78px;
+  }
+
+  .mission .container {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .contacts p {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 620px) {
+  .member .socials-list {
+    top: 70%;
+    right: 94px;
+  }
+
+  .member {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 544px) {
+  .member .socials-list {
+    top: 67%;
+    right: 74px;
+  }
+}
+@media screen and (max-width: 486px) {
+  .member .socials-list {
+    top: 64%;
+    right: 19%;
+  }
+}
+@media screen and (max-width: 426px) {
+  .first .container {
+    padding-top: 50px;
+  }
+
+  h1 {
+    font-size: 2.1em;
+  }
+
+  .member {
+    width: 80%;
+  }
+
+  .member .socials-list {
+    top: 67%;
+    right: 27%;
+  }
+
+  .contacts p {
+    width: 300px;
+    margin-inline: auto;
+  }
+}
+@media screen and (max-width: 358px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .first .container {
+    padding: 30px;
+  }
+
+  .mission h2 + p, .our-team h2 {
+    font-size: 1.6rem;
+  }
 }

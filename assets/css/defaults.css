@@ -218,6 +218,20 @@ header .logo img {
   border-left: 1px solid var(--black-color);
 }
 
+.black-burger {
+  border: 2px solid black;
+}
+.black-burger::after {
+  background-color: var(--black-color);
+}
+.black-burger .hamburger-inner, .black-burger .hamburger-inner::before, .black-burger .hamburger-inner::after {
+  background-color: #f4f4f4;
+}
+.black-burger .hamburger-inner {
+  top: 50%;
+  left: -3px;
+}
+
 /*Media*/
 /*Mobile menu*/
 @media screen and (max-width: 836px) {
