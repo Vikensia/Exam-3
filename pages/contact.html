@@ -13,6 +13,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
     <meta name="apple-mobile-web-app-title" content="Canvix">
     <link rel="manifest" href="../assets/favicon/site.webmanifest">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
 
 <body>
@@ -62,52 +64,80 @@
             </div>
         </header>
         <main>
-            <section class="form">
+            <section class="contacts">
                 <div class="container">
                     <div class="text-content">
                         <h1>Let’s talk</h1>
                         <p>We collaborate with thousands of creators, entrepreneurs and complete legends.</p>
                         <ul class="contacts-list">
                             <li>
-                                <svg>
-                                    <use xlink:href="../assets/img/index/sprite.svg#letter-s" />
-                                </svg>
-                                <h3>Our email</h3>
-                                <a href="mailto:hello@example.com">hello@example.com</a>
+                                <div class="svg-box">
+                                    <svg>
+                                        <use xlink:href="../assets/img/index/sprite.svg#letter-s" />
+                                    </svg>
+                                </div>
+                                <div class="text-content">
+                                    <h3>Our email</h3>
+                                    <a href="mailto:hello@example.com">hello@example.com</a>
+                                </div>
                             </li>
                             <li>
-                                <svg>
-                                    <use xlink:href="../assets/img/index/sprite.svg#letter-s" />
-                                </svg>
-                                <h3>Call us</h3>
-                                <a href="tel:+10124574578">+101 245 74578</a>
+                                <div class="svg-box">
+                                    <svg>
+                                        <use xlink:href="../assets/img/index/sprite.svg#phone" />
+                                    </svg>
+                                </div>
+                                <div class="text-content">
+                                    <h3>Call us</h3>
+                                    <a href="tel:+10124574578">+101 245 74578</a>
+                                </div>
                             </li>
                             <li>
-                                <svg>
-                                    <use xlink:href="../assets/img/index/sprite.svg#phone" />
-                                </svg>
-                                <h3>Find us</h3>
-                                <a href="https://www.google.com/maps/place/Tanglewood+Dr,+Biloxi,+MS+39531,+%D0%A1%D0%A8%D0%90/@30.4063731,-88.9649799,120m/data=!3m1!1e3!4m15!1m8!3m7!1s0x889c11be7eaff1d9:0xb9e2bb3ec993ee06!2zVGFuZ2xld29vZCBEciwgQmlsb3hpLCBNUyAzOTUzMSwg0KHQqNCQ!3b1!8m2!3d30.4064886!4d-88.965084!16s%2Fg%2F1t_wq3wd!3m5!1s0x889c11be7eaff1d9:0xb9e2bb3ec993ee06!8m2!3d30.4064886!4d-88.965084!16s%2Fg%2F1t_wq3wd" target="_blank" rel="nofollow noreferrer" title="Link to Google Maps">Open Google Maps</a>
+                                <div class="svg-box">
+                                    <svg>
+                                        <use xlink:href="../assets/img/index/sprite.svg#pin" />
+                                    </svg>
+                                </div>
+                                <div class="text-content">
+                                    <h3>Find us</h3>
+                                    <a href="https://www.google.com/maps/place/Tanglewood+Dr,+Biloxi,+MS+39531,+%D0%A1%D0%A8%D0%90/@30.4063731,-88.9649799,120m/data=!3m1!1e3!4m15!1m8!3m7!1s0x889c11be7eaff1d9:0xb9e2bb3ec993ee06!2zVGFuZ2xld29vZCBEciwgQmlsb3hpLCBNUyAzOTUzMSwg0KHQqNCQ!3b1!8m2!3d30.4064886!4d-88.965084!16s%2Fg%2F1t_wq3wd!3m5!1s0x889c11be7eaff1d9:0xb9e2bb3ec993ee06!8m2!3d30.4064886!4d-88.965084!16s%2Fg%2F1t_wq3wd" target="_blank" rel="nofollow noreferrer" title="Link to Google Maps">Open Google Maps</a>
+                                </div>
                             </li>
                         </ul>
                     </div>
                     <form action="#" method="post">
-                        <label for="name">First name</label>
-                        <input type="text" id="name" name="name" required>
-                        <label for="last-name">Last name</label>
-                        <input type="text" id="last-name" name="last-name" required>
-                        <label for="email-full">Email</label>
-                        <input type="email" id="email-full" name="email-full" required>
-                        <label for="phone">Phone</label>
-                        <input type="tel" id="phone" name="phone" required>
-                        <label for="message">Message</label>
-                        <input type="text" id="message" name="message" required>
-                        <button type="submit">Submit Now</button>
+                        <div class="form-field">
+                            <label for="name">First name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="last-name">Last name</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="email-full">Email</label>
+                            <input type="email" id="email-full" name="email-full" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-field message">
+                            <label for="message">Message</label>
+                            <input type="text" id="message" name="message" required>
+                        </div>
+                        <button type="submit" class="btn black-btn">Submit Now</button>
                     </form>
                 </div>
             </section>
             <section class="map">
-                <div class="container"></div>
+                <div class="container">
+                    <div id="map" class="map-container">
+                        <a class="initMap">
+                            <img src="../assets/img/map.png" alt="Canvix location">
+                        </a>
+                    </div>
+                </div>
             </section>
         </main>
         <footer>
@@ -123,7 +153,7 @@
                             <li><a href="../index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="portfolio.html">Portfolio</a></li>
-                            <li><a href="#">Conatct Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="subscribe-block">
@@ -178,6 +208,34 @@
     </div>
     <script src="../assets/js/harmburger.js"></script>
     <script src="../assets/js/placeholder.js"></script>
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script>
+        const myIcon = L.icon({
+            iconUrl: '../assets/plugins/leaflet/images/marker-icon.png',
+            iconSize: [25, 41],
+            iconAnchor: [12, 43],
+            popupAnchor: [1, -43],
+            shadowUrl: '../assets/plugins/leaflet/images/marker-shadow.png',
+            shadowSize: [41, 41],
+            shadowAnchor: [12, 43]
+        });
+
+        $(".initMap").click(() => {
+            $("#map").html('')
+            initMap()
+        })
+
+        function initMap() {
+            const map = L.map('map').setView([30.406505449363866, -88.96498995001923], 16);
+
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>'
+            }).addTo(map);
+
+            L.marker([30.406505449363866, -88.96498995001923], { icon: myIcon }).addTo(map).bindPopup('Canvix location')
+        }
+    </script>
+
 </body>
 
 </html>

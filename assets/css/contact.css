@@ -696,3 +696,102 @@ header .logo img {
     margin-left: 20px;
   }
 }
+.contacts .container {
+  margin-top: 78px;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-family: "Roboto Serif", serif;
+  font-size: 4rem;
+  margin-bottom: 32px;
+}
+h1 + p {
+  margin-bottom: 32px;
+}
+
+.text-content {
+  width: 400px;
+}
+
+.contacts-list {
+  border-top: 1px solid #DFDFDF;
+  border-bottom: 1px solid #DFDFDF;
+  padding: 32px 0;
+}
+.contacts-list li {
+  display: flex;
+  gap: 26px;
+  margin-bottom: 20px;
+}
+.contacts-list li .svg-box {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contacts-list li svg {
+  width: 25px;
+  height: 25px;
+}
+.contacts-list li .text-content {
+  width: 230px;
+}
+.contacts-list li:last-child {
+  margin-bottom: 0;
+}
+
+h3 {
+  font-family: "Roboto Serif", serif;
+  font-size: 1.25rem;
+}
+h3 + a, h3 a:visited, h3 a:hover, h3 a:active {
+  color: var(--text-color);
+  font-size: 1rem;
+  letter-spacing: 0.03rem;
+}
+
+main form {
+  width: 795px;
+  padding: 45px;
+  background-color: var(--grey-color);
+  display: grid;
+  gap: 63px 52px;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 103px;
+  border-radius: 20px;
+}
+main form label {
+  display: block;
+}
+main form input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #DFDFDF;
+  width: 100%;
+  height: 50px;
+  font-size: 1rem;
+  padding: 10px;
+}
+main form button {
+  width: 157px;
+}
+
+.message {
+  grid-column: 1/3;
+}
+
+.map-container {
+  height: 314px;
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 100px;
+}
+.map-container img {
+  width: 100%;
+  height: 314px;
+}
