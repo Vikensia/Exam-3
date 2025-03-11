@@ -794,4 +794,47 @@ main form button {
 .map-container img {
   width: 100%;
   height: 314px;
+  object-fit: cover;
+}
+
+/*Media*/
+@media screen and (max-width: 1360px) {
+  main form {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .text-content {
+    width: 35%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 868px) {
+  .contacts .container {
+    flex-wrap: wrap;
+  }
+
+  main form, .text-content {
+    width: 100%;
+  }
+
+  .contacts-list {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (max-width: 582px) {
+  main form {
+    grid-template-columns: 1fr;
+  }
+
+  .form-field {
+    width: 100%;
+  }
+
+  .message {
+    grid-column: 1/1;
+  }
 }
