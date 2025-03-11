@@ -4,10 +4,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Contact us</title>
+    <link type="text/css" rel="stylesheet" href="../assets/plugins/lightslider/css/lightslider.css">
+    <link rel="stylesheet" href="../assets/css/portfolio.min.css">
+    <link rel="icon" type="image/png" href="../assets/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg">
+    <link rel="shortcut icon" href="../assets/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="Canvix">
+    <link rel="manifest" href="../assets/favicon/site.webmanifest">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
 
 <body>
+    <!-- Mobile menu -->
+    <div class="page-shadow"></div>
+    <div class="mobile-panel">
+        <div class="logo">
+            <a href="#">
+                <img src="../assets/img/canvix-black-header-logo.svg" alt="Canvix Logo">
+            </a>
+        </div>
+        <nav class="mobile-menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Page content -->
+    <div class="page-wrapper">
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../assets/img/canvix-black-header-logo.svg" alt="Canvix Logo">
+                    </a>
+                </div>
+                <nav class="main-menu">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a class="current" href="#">Portfolio</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </nav>
+                <div class="buttons-block">
+                    <a href="contact.html" class="btn contact-btn black-btn">Get in touch</a>
+                    <button class="hamburger hamburger--squeeze btn black-burger" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="potrfolio">
+                <div class="container">
+                    <div class="heading-box">
+                        <h1>Our Portfolio</h1>
+                    </div>
+                    <div class="projects">
+                        <div class="project">
+                            <a href="portfolio/red-flower.html">
+                                <div class="image-box">
+                                    <img src="../assets/img/index/project-flower.jpg" alt="Pink flower in blue circle with orange elements in grey background">
+                                </div>
+                                <h3>Web UI design</h3>
+                                <p>Creative UI design</p>
+                            </a>
+                        </div>
+                        <div class="project">
+                            <a href="portfolio/nature-ui.html">
+                                <div class="image-box">
+                                    <img src="../assets/img/index/project-bird.jpg" alt="Abstract figure with nature landscape, birds, animals and butterflies">
+                                </div>
+                                <h3>UI Design</h3>
+                                <p>Creative Rebranding for logo</p>
+                            </a>
+                        </div>
+                        <div class="project">
+                            <a href="portfolio/orange-moon.html">
+                                <div class="image-box">
+                                    <img src="../assets/img/index/project-round.jpg" alt="Person in orange overall with grey backpack staying close to orange round in dark grey background">
+                                </div>
+                                <h3>To design Digital Strategy</h3>
+                                <p>Social Media Marketing</p>
+                            </a>
+                        </div>
+                        <div class="project">
+                            <a href="portfolio/travel-ui.html">
+                                <div class="image-box">
+                                    <img src="../assets/img/index/project-travel.jpg" alt="Traveller near sun in abstract round nature landscape">
+                                </div>
+                                <h3>UI Design</h3>
+                                <p>Creative Rebranding for logo</p>
+                            </a>
+                        </div>
+                        <div class="project">
+                            <a href="portfolio/travel-ui.html">
+                                <div class="image-box">
+                                    <img src="../assets/img/portfolio/project-figures.jpg" alt="Colourful figures on blue background">
+                                </div>
+                                <h3>Graphic design</h3>
+                                <p>Graphic design</p>
+                            </a>
+                        </div>
+                        <div class="project">
+                            <a href="portfolio/travel-ui.html">
+                                <div class="image-box">
+                                    <img src="../assets/img/portfolio/project-cube.jpg" alt="Colourful cube">
+                                </div>
+                                <h3>UI Design</h3>
+                                <p>Creative Rebranding for logo</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contacts">
+                <div class="container">
+                    <p>Enough talk, let’s get to work</p>
+                    <div class="button-block">
+                        <a href="contact.html" class="btn contact-btn white-btn">Get in touch</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="block block-top">
+                    <div class="about">
+                        <img src="../assets/img/canvix-footer-logo.svg" alt="Canvix logo">
+                        <p>We’re a team of strategic creator and digital innovator, united focus in our pursuit of mastery and joyful.</p>
+                    </div>
+                    <div class="pages">
+                        <h4>Pages</h4>
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="subscribe-block">
+                        <h4>Subscribe</h4>
+                        <form action="#" method="dialog">
+                            <input type="email" name="email" id="email" placeholder="Enter your email here" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="block block-bottom">
+                    <div class="copyright">
+                        <h4>Copyright by</h4>
+                        <a href="https://www.iconstica.com/" target="_blank" rel="nofollow noreferrer" title="Link to Iconstica.com">Designed by Iconstica.com</a>
+                    </div>
+                    <div class="telephone">
+                        <h4>Contact</h4>
+                        <a href="tel:+10124574578">+0 12 457 4578</a>
+                    </div>
+                    <div class="address">
+                        <h4>Address</h4>
+                        <address>
+                            119 Tanglewood Lane Gulfport, MS 39503
+                        </address>
+                    </div>
+                    <ul class="socials-list">
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank" rel="nofollow noreferrer" title="Link to Facebook">
+                                <svg>
+                                    <use xlink:href="../assets/img/index/sprite.svg#fb" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank" rel="nofollow noreferrer" title="Link to Instagram">
+                                <svg>
+                                    <use xlink:href="../assets/img/index/sprite.svg#inst" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/" target="_blank" rel="nofollow noreferrer" title="Link to LinkedIn">
+                                <svg>
+                                    <use xlink:href="../assets/img/index/sprite.svg#linkedin" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../assets/js/harmburger.js"></script>
+    <script src="../assets/js/placeholder.js"></script>
+
 
 </body>
 

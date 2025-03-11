@@ -1,0 +1,160 @@
+@import "fonts.scss";
+@import "hamburgers.scss";
+@import "footer.scss";
+@import "defaults.scss";
+
+h1 {
+    color: var(--white-color);
+    text-align: center;
+    font-family: "Roboto Serif", serif;
+    font-size: 4.8125rem;
+    font-weight: 700;
+    line-height: 117.047%;
+    letter-spacing: 0.04813rem;
+    padding: 130px 0;
+    background-color: black;
+    border-radius: 20px;
+    margin-top: 67px;
+    margin-bottom: 100px;
+}
+
+.projects {
+    display: grid;
+    gap: 84px 71px;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 106px;
+}
+
+.project {
+	.image-box {
+		margin-bottom: 16px;
+		overflow: hidden;
+		border-radius: 20px;
+		position: relative;
+		img {
+			object-fit: cover;
+			transition: all .5s ease;
+		}
+		&::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			display: block;
+			width: 100%;
+			height: 100%;
+			transition: all .5s ease;
+			z-index: 1;
+			background: rgba(0, 0, 0, 0.2);
+			opacity: 0;
+		}
+	}
+	&:hover img {
+		scale: 1.1;
+	}
+	&:hover .image-box::after {
+		opacity: 1;
+	}
+	&:hover .image-box::before {
+		content: url(../img/index/hover-arrow.svg);
+		position: absolute;
+		left: calc(50% - 20px);
+		top: calc(50% - 20px);
+		z-index: 2;
+	}
+	h3 {
+		color: var(--black-color);
+		font-family: "Roboto Serif", serif;
+		font-size: 1.875rem;
+		font-weight: 600;
+		margin-bottom: 10px;
+		letter-spacing: -0.07rem;
+	}
+	&:hover a, &:hover h3 {
+		color:	var(--black-color);
+	}
+	a, a:visited {
+		color: var(--black-color)
+	}
+}
+
+.contacts {
+    .container {
+        background-image: url('../img/about/last-bg.jpg');
+        padding-top: 45px;
+        padding-bottom: 33px;
+        margin-bottom: 100px;
+        border-radius: 20px;
+    }
+    p {
+        color: var(--white-color);
+        text-align: center;
+        font-family: "Roboto Serif", serif;
+        font-size: 2.8125rem;
+        font-weight: 700;
+        margin-bottom: 24px;
+    }
+    .button-block {
+        width: 160px;
+        margin-inline: auto;
+    }
+}
+
+/*Media*/
+
+
+@media screen and (max-width: 982px) {
+    h1 {
+    font-size: 4rem;
+    padding: 100px 0;
+    margin-bottom: 60px;
+}
+
+    .contacts p {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 835px) {
+    .contacts .container {
+        margin-bottom: 40px;
+}
+}
+
+@media screen and (max-width: 676px) {
+    .projects {
+        gap: 40px;
+        margin-bottom: 60px;
+    }
+    .project h3 {
+        font-size: 1.4rem;
+    }
+
+    .contacts p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 574px) {
+    h1 {
+    font-size: 3rem;
+    padding: 60px 20px;
+}
+
+.projects {
+    grid-template-columns: 1fr;
+}
+}
+
+@media screen and (max-width: 464px) {
+    h1 {
+    font-size: 2.5rem;
+}
+}
+
+@media screen and (max-width: 426px) {
+    .contacts p {
+        width: 300px;
+        margin-inline: auto;
+    }
+}
