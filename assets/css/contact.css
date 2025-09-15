@@ -167,7 +167,7 @@ footer .pages li {
 footer .pages li:last-child {
   margin-bottom: 0;
 }
-footer a, footer a:visited {
+footer a {
   color: var(--grey-color);
 }
 footer a:hover, footer a:active {
@@ -749,10 +749,13 @@ h3 {
   font-family: "Roboto Serif", serif;
   font-size: 1.25rem;
 }
-h3 + a, h3 a:visited, h3 a:hover, h3 a:active {
+h3 + a, h3 a:visited, h3 a:active {
   color: var(--text-color);
   font-size: 1rem;
   letter-spacing: 0.03rem;
+}
+h3 + a:hover, h3 a:hover {
+  color: var(--green-color);
 }
 
 main form {

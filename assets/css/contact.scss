@@ -55,10 +55,13 @@ h1 {
 h3 {
     font-family: "Roboto Serif", serif;
     font-size: 1.25rem;
-    + a, a:visited, a:hover, a:active {
+    + a, a:visited, a:active {
         color: var(--text-color);
         font-size: 1rem;
         letter-spacing: 0.03rem;
+    }
+    + a:hover, a:hover {
+        color: var(--green-color);
     }
 }
 

@@ -167,7 +167,7 @@ footer .pages li {
 footer .pages li:last-child {
   margin-bottom: 0;
 }
-footer a, footer a:visited {
+footer a {
   color: var(--grey-color);
 }
 footer a:hover, footer a:active {
